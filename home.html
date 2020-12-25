@@ -11,9 +11,18 @@
 <link href="/LOGO.png" rel="shortcut icon" type="image/x-icon" />
 <script src='https://kit.fontawesome.com/a076d05399.js'></script>
 <style>
-  body,
+  @import 'https://fonts.googleapis.com/css?family=Kanit|Prompt';
+
+  body {
+    font-family: 'Kanit', sans-serif;
+  }
+
   h1 {
     font-family: "Montserrat", sans-serif
+  }
+
+  h2 {
+    font-family: 'Prompt', sans-serif;
   }
 
   img {
@@ -34,14 +43,14 @@
     border: none;
     outline: none;
     background-color: rgb(10, 71, 27);
-        color: white;
-        cursor: pointer;
-        padding: 15px;
-        border-radius: 4px;
-    }
+    color: white;
+    cursor: pointer;
+    padding: 15px;
+    border-radius: 4px;
+  }
 
-    #myBtn:hover {
-        background-color: rgb(11, 12, 11);
+  #myBtn:hover {
+    background-color: rgb(11, 12, 11);
   }
 </style>
 
@@ -56,11 +65,13 @@
         <i class="fa fa-remove"></i>
       </a>
       <div class="w3-bar-block w3-center">
-        <a href="About.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black">เกี่ยวกับ</a>
-        <a href="Office.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black">หน่วยงาน</a>
-        <a href="Research.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black">วิจัยและการบริการวิชาการ</a>
-        <a href="รอบ.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black">รอบรั้วมหาวิทยาลัย</a>
-        <a href="From.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black">แบบสอบถาม</a>
+        <h2><a href="About.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black">เกี่ยวกับ</a></h2>
+        <h2><a href="Office.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black">หน่วยงาน</a></h2>
+        <h2><a href="Research.html"
+            class="w3-bar-item w3-button w3-text-grey w3-hover-black">วิจัยและการบริการวิชาการ</a>
+        </h2>
+        <h2><a href="รอบ.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black">รอบรั้วมหาวิทยาลัย</a></h2>
+        <h2><a href="From.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black">แบบสอบถาม</a></h2>
       </div>
     </nav>
   </div>
@@ -118,14 +129,27 @@
   </div>
 
   <!-- Footer -->
+  <nav class="navbar navbar-expand-sm bg-dark navbar-dark ">
+  </nav>
   <footer class="w3-container w3-padding-64 w3-light-green w3-center w3-opacity w3-xlarge" style="margin-top:128px">
-    <i class="fa fa-facebook-official w3-hover-opacity"></i>
-    <i class="fa fa-instagram w3-hover-opacity"></i>
-    <i class="fa fa-snapchat w3-hover-opacity"></i>
-    <i class="fa fa-pinterest-p w3-hover-opacity"></i>
-    <i class="fa fa-twitter w3-hover-opacity"></i>
-    <i class="fa fa-linkedin w3-hover-opacity"></i>
-
+    <div align="center">
+      <a href="http://line.me/ti/p/@maejouniversity" target="blank"><img src="/Photo/f2.png"></a>
+      <a href="https://www.facebook.com/MaejoUniversity" target="blank"><img src="/Photo/f3.png"></a>
+      <a href="https://www.youtube.com/mjuchannelhd" target="blank"><img src="/Photo/youtube-icon.png"></a>
+      <a href="http://instagram.com/maejouniversity" target="blank"><img src="/Photo/instagram-icon.png"></a>
+      <a href="https://green.mju.ac.th/" target="blank">Go Eco???</a>
+    </div>
+    <div class="container">
+      <br>
+      <div class="row">
+        <div class="col-sm-12">
+          มหาวิทยาลัยแม่โจ้ 63 หมู่ 4 ต.หนองหาร อ.สันทราย จ.เชียงใหม่ 50290
+        </div>
+        <div class="col-sm-12">
+          โทรศัพท์ : 053 873000 โทรสาร : 053 873015 maejo@mju.ac.th
+        </div>
+      </div>
+    </div>
   </footer>
 
   <script>

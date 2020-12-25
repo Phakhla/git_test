@@ -13,9 +13,16 @@
   <link href="/LOGO.png" rel="shortcut icon" type="image/x-icon" />
   <script src='https://kit.fontawesome.com/a076d05399.js'></script>
   <style>
-    body,
-    h1 {
-      font-family: "Montserrat", sans-serif
+    @import 'https://fonts.googleapis.com/css?family=Kanit|Prompt';
+
+    body {
+      font-family: 'Kanit', sans-serif;
+    }
+
+    h1,
+    h2,
+    h3 {
+      font-family: 'Prompt', sans-serif;
     }
 
     img {
@@ -25,50 +32,54 @@
     .w3-row-padding img {
       margin-bottom: 12px
     }
+
     #myBtn {
-        display: none;
-        position: fixed;
-        bottom: 20px;
-        right: 30px;
-        z-index: 99;
-        font-size: 18px;
-        border: none;
-        outline: none;
-        background-color: rgb(52, 153, 60);
-        color: white;
-        cursor: pointer;
-        padding: 15px;
-        border-radius: 4px;
+      display: none;
+      position: fixed;
+      bottom: 20px;
+      right: 30px;
+      z-index: 99;
+      font-size: 18px;
+      border: none;
+      outline: none;
+      background-color: rgb(52, 153, 60);
+      color: white;
+      cursor: pointer;
+      padding: 15px;
+      border-radius: 4px;
     }
 
     #myBtn:hover {
-        background-color: rgb(33, 238, 33);
+      background-color: rgb(33, 238, 33);
     }
   </style>
 </head>
 
 <body>
-  <button onclick="topFunction()" id="myBtn" title="Go to top"><i style="font-size:48px" class="fa fa-arrow-circle-up" ></i></button>
+  <button onclick="topFunction()" id="myBtn" title="Go to top"><i style="font-size:48px"
+      class="fa fa-arrow-circle-up"></i></button>
   <nav class="w3-sidebar w3-black w3-animate-top w3-xxlarge" style="display:none;padding-top:150px" id="mySidebar">
     <a href="javascript:void(0)" onclick="w3_close()"
       class="w3-button w3-white w3-xxlarge w3-padding w3-display-topright" style="padding:6px 24px">
       <i class="fa fa-remove"></i>
     </a>
     <div class="w3-bar-block w3-center">
-      <a href="About.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black">เกี่ยวกับ</a>
-      <a href="Office.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black">หน่วยงาน</a>
-      <a href="Research.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black">วิจัยและการบริการวิชาการ</a>
-      <a href="รอบ.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black">รอบรั้วมหาวิทยาลัย</a>
-      </div>
+      <h2><a href="About.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black">เกี่ยวกับ</a></h2>
+      <h2><a href="Office.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black">หน่วยงาน</a></h2>
+      <h2><a href="Research.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black">วิจัยและการบริการวิชาการ</a>
+      </h2>
+      <h2><a href="รอบ.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black">รอบรั้วมหาวิทยาลัย</a></h2>
+    </div>
   </nav>
   <div class="w3-opacity-min">
-    <span class="w3-button w3-large w3-white w3-left" ><img height="50px" width="50px" src="/LOGO.png"></span>
+    <span class="w3-button w3-large w3-white w3-left"><img height="50px" width="50px" src="/LOGO.png"></span>
     <span class="w3-button w3-xxlarge w3-white w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></span>
-    <span class="w3-button w3-xxlarge w3-white w3-right" ><a href="home.html" ><i class='fas fa-house-user' style='font-size:36px'></i></a></span>
+    <span class="w3-button w3-xxlarge w3-white w3-right"><a href="home.html"><i class='fas fa-house-user'
+          style='font-size:36px'></i></a></span>
     <div class="w3-clear"></div>
   </div>
   <div class="container">
-   
+
     <h1 class="text-center">แบบฟอร์มขอลาออก</h1>
     <h3>วันที่</h3><br>
     <input type="date" size="22px"> <br>
@@ -90,6 +101,26 @@
     </div>
 
   </div>
+  <footer class="w3-container w3-padding-64 w3-light-green w3-center w3-opacity w3-xlarge" style="margin-top:128px">
+    <div align="center">
+      <a href="http://line.me/ti/p/@maejouniversity" target="blank"><img src="/Photo/f2.png"></a>
+      <a href="https://www.facebook.com/MaejoUniversity" target="blank"><img src="/Photo/f3.png"></a>
+      <a href="https://www.youtube.com/mjuchannelhd" target="blank"><img src="/Photo/youtube-icon.png"></a>
+      <a href="http://instagram.com/maejouniversity" target="blank"><img src="/Photo/instagram-icon.png"></a>
+      <a href="https://green.mju.ac.th/" target="blank">Go Eco???</a>
+    </div>
+    <div class="container">
+      <br>
+      <div class="row">
+        <div class="col-sm-12">
+          มหาวิทยาลัยแม่โจ้ 63 หมู่ 4 ต.หนองหาร อ.สันทราย จ.เชียงใหม่ 50290
+        </div>
+        <div class="col-sm-12">
+          โทรศัพท์ : 053 873000 โทรสาร : 053 873015 maejo@mju.ac.th
+        </div>
+      </div>
+    </div>
+  </footer>
   <script>
     // Toggle grid padding
     function myFunction() {
@@ -112,22 +143,22 @@
     }
     var mybutton = document.getElementById("myBtn");
 
-        // When the user scrolls down 20px from the top of the document, show the button
-        window.onscroll = function () { scrollFunction() };
+    // When the user scrolls down 20px from the top of the document, show the button
+    window.onscroll = function () { scrollFunction() };
 
-        function scrollFunction() {
-            if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
-                mybutton.style.display = "block";
-            } else {
-                mybutton.style.display = "none";
-            }
-        }
+    function scrollFunction() {
+      if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
+        mybutton.style.display = "block";
+      } else {
+        mybutton.style.display = "none";
+      }
+    }
 
-        // When the user clicks on the button, scroll to the top of the document
-        function topFunction() {
-            document.body.scrollTop = 0;
-            document.documentElement.scrollTop = 0;
-        }
+    // When the user clicks on the button, scroll to the top of the document
+    function topFunction() {
+      document.body.scrollTop = 0;
+      document.documentElement.scrollTop = 0;
+    }
   </script>
 
 

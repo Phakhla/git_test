@@ -4,12 +4,12 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>แบบสอบถาม</title>
+  <title>ฟอร์มขอลาออก</title>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
+    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css"
-    integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
   <link href="/LOGO.png" rel="shortcut icon" type="image/x-icon" />
   <script src='https://kit.fontawesome.com/a076d05399.js'></script>
   <style>
@@ -21,7 +21,9 @@
 
     h1,
     h2,
-    h3 {
+    h3,
+    h4,
+    h5 {
       font-family: 'Prompt', sans-serif;
     }
 
@@ -72,26 +74,456 @@
     </div>
   </nav>
   <div class="w3-opacity-min">
-    <span class="w3-button w3-large w3-white w3-left"><img height="50px" width="50px" src="/LOGO.png"></span>
+    <span class="w3-button w3-large w3-white w3-left"><a href="home.html"><img height="50px" width="50px"
+          src="/LOGO.png"></span></a>
     <span class="w3-button w3-xxlarge w3-white w3-right" onclick="w3_open()"><i class="fa fa-bars"></i></span>
     <span class="w3-button w3-xxlarge w3-white w3-right"><a href="home.html"><i class='fas fa-house-user'
           style='font-size:36px'></i></a></span>
     <div class="w3-clear"></div>
   </div>
+  <div class="w3-center">
+    <br><img src="/มหาวิทยาลัยแม่โจ้_edit.png" width="150px" height="150px"><br>
+  </div>
+
   <div class="container">
-
-    <h1 class="text-center">แบบฟอร์มขอลาออก(ยังไม่เสร็จ)</h1>
-    <br><nav class="navbar navbar-expand-sm bg-dark navbar-dark ">
+    <br>
+    <h1 class="text-center">คำร้องขอลาออก</h1>
+    <br>
+    <nav class="navbar navbar-expand-sm bg-dark navbar-dark ">
     </nav><br>
-    <h3>วันที่</h3><br>
-    <input type="date" size="22px"> <br>
-    Name: ชื่อ<BR>
-    <INPUT TYPE="text" NAME="name" SIZE="30" MAXLENGTH=30><BR>
-    นามสกุล<BR>
-    <INPUT TYPE="text" NAME="lastname" SIZE="30" MAXLENGTH=30><BR>
-    
-    </div>
+    <h5>
+      <form action="/action_page.php">
 
+
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-8">
+
+            </div>
+            <div class="col-sm-4">
+              วันที่ <br><input type="date"><br>
+            </div>
+          </div>
+          <div class="col-sm-12">
+            <b>เรื่อง </b> ขอลาออก<br>
+            <br><b>เรียน</b> อธิการบดี ผ่านคณบดี
+          </div>
+          <div class="col-sm-6">
+            <select class="custom-select">
+              <option selected>เลือกคณะ</option>
+              <option value="1">คณะวิทยาศาสตร์
+              <option value="2">คณะบริหารธุรกิจ
+              <option value="1">คณะผลิตกรรมการเกษตร
+              <option value="2">คณะพัฒนาการท่องเที่ยว
+              <option value="2">คณะวิศวกรรมและอุตสาหกรรมเกษตร
+              <option value="2">คณะศิลปศาสตร์
+              <option value="2">คณะสถาปัตยกรรมศาสตร์และการออกแบบสิ่งแวดล้อม
+              <option value="2">คณะสัตวศาสตร์และเทคโนโลยี
+              <option value="2">คณะเทคโนโลยีการประมงและทรัพยากรทางน้ำ
+              <option value="2">คณะเศรษฐศาสตร์
+              <option value="2">คณะสารสนเทศและการสื่อสาร
+            </select><br><br>
+          </div>
+          <div class="row">
+            <div class="col-sm-1">
+            </div>
+            <div class="col-sm-11">
+              ข้าพเจ้า <input name="v" type="radio"> นาย <input name="v" type="radio"> นาง <input name="v" type="radio">
+              นางสาว
+              ชื่อ <input name="v" type="text" size="20" maxlength="30"> นามสกุล <input name="v" type="text" size="20"
+                maxlength="30"><br>
+            </div>
+          </div>
+          <div class="col-sm-12">
+            <br>รหัสนักศึกษา(10หลัก) <input name="v" type="text" size="20" maxlength="10" pattern="number">
+            <br><br>โทรศัพท์มือถือ (10หลัก) <input name="v" type="text" size="20" maxlength="10">
+            <font color="red">(โปรดระบุ)</font>
+            <br><br>หลักสูตร ปริญญาตรี <input name="z" type="radio"> 4 – 5 ปี <input name="z" type="radio"> 4
+            ปีเทียบเข้าเรียน(2ปี) <input name="x" type="radio"> ภาคปกติ <input name="x" type="radio"> ภาคสมทบ
+            <br><br>สาขาวิชา <input name="v" type="text" size="20" maxlength="20"> คณะ <input name="v" type="text"
+              size="20" maxlength="20"><br>
+            <br>v มีความประสงค์จะขอลาออก เนื่องจาก v<br>
+          </div>
+          <div class="col-sm-12">
+
+            <textarea rows="5" cols-sm="27" maxlength="300">
+            </textarea>
+
+          </div>
+        </div>
+        <div class="col-sm-6">
+          <br><br>พร้อมนี้ได้แนบใบยินยอมขอลาออกจากผู้ปกครอง <div class="custom-file mb-3">
+            <input type="file" class="custom-file-input" id="customFile" name="filename">
+            <label class="custom-file-label" for="customFile">เลือกไฟล์</label>
+          </div><br>
+          <br>
+        </div>
+        <div class="row">
+          <div class="col-sm-2">
+
+          </div>
+          <div class="col-sm-5">
+            จึงเรียนมาเพื่อโปรดพิจารณา
+          </div>
+        </div>
+        <br>
+        <div class="row">
+          <div class="col-sm-5">
+
+          </div>
+          <br>
+          <div class="col-sm-5">
+            ขอแสดงความนับถือ<br> <br>
+            <div class="custom-file mb-3">
+              <input type="file" class="custom-file-input" id="customFile" name="filename">
+              <label class="custom-file-label" for="customFile">เลือกไฟล์</label>
+            </div><br><br>(นักศึกษา)
+          </div><br>
+        </div>
+        <br><br>
+        <div class="row">
+          <div class="col-sm-6">
+            <div class="card bg-light text-dark">
+              <div class="card-body">
+                ความเห็นอาจารย์ที่ปรึกษา
+                <div class="col">
+                  <input type="checkbox" name="v"> ทราบ<br>
+                  <br>
+                  <br>
+                  <div class="col">
+                    <div class="custom-file mb-3">
+                      <input type="file" class="custom-file-input" id="customFile" name="filename">
+                      <label class="custom-file-label" for="customFile">เลือกไฟล์</label>
+                      (แนบลายเซ็น)
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div><br>
+          <div class="col-sm-6">
+            <div class="card bg-light text-dark">
+              <div class="card-body">
+                ความเห็นประธานอาจารย์ประจำหลักสูตร
+                <div class="col">
+                  <input type="checkbox" name="v"> ทราบ<br>
+                  <br>
+                  <br>
+                  <div class="col">
+                    <div class="custom-file mb-3">
+                      <input type="file" class="custom-file-input" id="customFile" name="filename">
+                      <label class="custom-file-label" for="customFile">เลือกไฟล์</label>
+                      (แนบลายเซ็น)
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="card bg-light text-dark">
+              <div class="card-body">
+                ความเห็นคณบดี
+                <div class="col">
+                  <input type="checkbox" name="v"> ทราบ<br>
+                  <br>
+                  <br>
+                  <div class="col">
+                    <div class="custom-file mb-3">
+                      <input type="file" class="custom-file-input" id="customFile" name="filename">
+                      <label class="custom-file-label" for="customFile">เลือกไฟล์</label>
+                      (แนบลายเซ็น)
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="card bg-light text-dark">
+              <div class="card-body">
+                ความเห็นผู้อำนวยการสำนักบริหารและพัฒนาวิชาการ
+                <div class="col">
+                  <input type="checkbox" name="v"> ทราบ<br>
+                  <br>
+                  <br>
+                  <div class="col">
+                    <div class="custom-file mb-3">
+                      <input type="file" class="custom-file-input" id="customFile" name="filename">
+                      <label class="custom-file-label" for="customFile">เลือกไฟล์</label>
+                      (แนบลายเซ็น)
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="card bg-light text-dark">
+              <div class="card-body">
+                ความเห็นอธิการบดี
+                <div class="col">
+                  <input type="radio" name="v"> อนุมัติ
+                  <input type="radio" name="v"> ไม่อนุมัติ<br>
+                  <br>
+                  <br>
+                  <div class="col">
+                    <div class="custom-file mb-3">
+                      <input type="file" class="custom-file-input" id="customFile" name="filename">
+                      <label class="custom-file-label" for="customFile">เลือกไฟล์</label>
+                      (แนบลายเซ็น)
+                    </div>
+                  </div><br><br>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="card bg-light text-dark">
+              <div class="card-body">
+                ความเห็นหัวหน้ากลุ่มภารกิจ ทะเบียนเรียน ประมวลผลฯ
+                <div class="col">
+                  <textarea rows="3" cols-sm="27" maxlength="300"></textarea><br>
+                  <br>
+                  <br>
+                  <div class="col">
+                    <div class="custom-file mb-3">
+                      <input type="file" class="custom-file-input" id="customFile" name="filename">
+                      <label class="custom-file-label" for="customFile">เลือกไฟล์</label>
+                      (แนบลายเซ็น)
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="card bg-light text-dark">
+              <div class="card-body">
+                สำหรับเจ้าหน้าที่บันทึกลงฐานข้อมูล
+                <div class="col">
+                  <br>
+                  <br>
+                  <div class="col">
+                    <div class="custom-file mb-3">
+                      <input type="file" class="custom-file-input" id="customFile" name="filename">
+                      <label class="custom-file-label" for="customFile">เลือกไฟล์</label>
+                      (แนบลายเซ็น)
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <div class="card bg-light text-dark">
+              <div class="card-body">
+
+                <h5>
+                  <b>
+                    คำร้องใบลาออกจะสิ้นสุดที่กลุ่มภารกิจทะเบียนเรียนฯ<br>
+                    สำนักบริหารและพัฒนาวิชาการ<br>
+                    ชั้น 2 อาคารอำนวย ยศสุข<br>
+                    เพื่อให้เจ้าหน้าที่บันทึกลงฐานข้อมูล
+                  </b>
+                </h5>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+        <br><br>
+        <nav class="navbar navbar-expand-sm bg-dark navbar-dark ">
+        </nav><br>
+        <!-- part 2 -->
+        <div class="container">
+          <div class="row">
+            <div class="col-sm-4">
+            </div>
+            <div class="col-sm-7">
+              <h3>คำร้องของผู้ปกครอง</h3><br>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-sm-6">
+            </div>
+            <div class="col-sm-1">
+              เขียนที่
+            </div>
+            <div class="col-sm-5">
+              <div class="card bg-light text-dark">
+                <div class="card-body">
+                  <div class="row">
+                    <div class="col-sm-3">
+                      บ้านเลขที่
+                    </div>
+                    <div class="col-sm-3">
+                      <input type="text" class="form-control" id="email">
+                    </div>
+                    <div class="col-sm-2">
+                      หมู่ที่
+                    </div>
+                    <div class="col-sm-3">
+                      <input type="text" class="form-control" id="email">
+                    </div><br>
+                    <br>
+                    <div class="col-sm-3">
+                      ตำบล
+                    </div>
+                    <div class="col-sm-5">
+                      <input type="text" class="form-control" id="email">
+                    </div>
+                    <br><br>
+                    <div class="col-sm-4">
+
+                    </div>
+                    <div class="col-sm-3">
+                      อำเภอ
+                    </div>
+                    <div class="col-sm-5">
+                      <input type="text" class="form-control" id="email">
+                    </div>
+                    <div class="col-sm-4">
+                      <br><br>
+                    </div>
+                    <div class="col-sm-3">
+                      จังหวัด
+                    </div>
+                    <div class="col-sm-5">
+                      <input type="text" class="form-control" id="email">
+                    </div>
+                    <div class="col-sm-4">
+
+                    </div><br><br>
+                    <div class="col-sm-5">
+                      <input maxlength="5" type="text" class="form-control" placeholder="หมายเลขไปรษณีย์" id="email">
+                    </div>
+                    <div class="col-sm-5">
+                      <input maxlength="10" type="text" class="form-control" placeholder="เบอร์โทรศัพท์">
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <br><br>
+          <div class="row">
+            <div class="col-sm-8">
+
+            </div>
+            <div class="col-sm-4">
+              วันที่ <br><input type="date"><br>
+            </div>
+          </div>
+          <div class="container">
+            <div class="row">
+              <div class="col-sm-3">
+                <b> เรื่อง </b> ยินยอมให้นักศึกษาลาออก<br>
+              </div>
+              <div class="col-sm-9">
+                ในภาคเรียนที่ <input type="radio" name="s"> 1 <input type="radio" name="s"> 2
+                ปีการศึกษา <input type="text" maxlength="4" size="5">
+              </div>
+            </div>
+          </div>
+          <div class="col-sm-6">
+            <br><b>เรียน</b> อธิการบดี<br><br>
+          </div>
+          <div class="row">
+            <div class="col-sm-1">
+            </div>
+            <div class="col-sm-11">
+              ตามที่ <input name="b" type="radio"> นาย <input name="b" type="radio"> นาง <input name="b" type="radio">
+              นางสาว
+              ชื่อ <input name="v" type="text" size="20" maxlength="30"> นามสกุล <input name="v" type="text" size="20"
+                maxlength="30"><br>
+            </div>
+          </div>
+          <div class="col-sm-12">
+
+            <br>รหัสนักศึกษา(10หลัก) <input name="v" type="text" size="20" maxlength="10" pattern="number">
+            <br><br>โทรศัพท์มือถือ (10หลัก) <input name="v" type="text" size="20" maxlength="10">
+            <font color="red">(โปรดระบุ)</font>
+            <br><br>หลักสูตร ปริญญาตรี <input name="m" type="radio"> 4 – 5 ปี <input name="m" type="radio"> 4
+            ปีเทียบเข้าเรียน(2ปี) <input name="," type="radio"> ภาคปกติ <input name="," type="radio"> ภาคสมทบ
+            <br><br>สาขาวิชา <input name="v" type="text" size="20" maxlength="20"> คณะ <input name="v" type="text"
+              size="20" maxlength="20"><br>
+            <div class="row">
+
+
+              <div class="col-sm-12">
+                <br>ซึ่ง เป็นนักศึกษาในความปกครองของข้าพเจ้ามีความประสงค์จะขอลาออก<br>
+
+              </div>
+              <div class="col-sm-12">
+                ในภาคเรียนที่ <input type="radio" name="n"> 1 <input type="radio" name="n"> 2
+                ปีการศึกษา <input type="text" maxlength="4" size="5">
+              </div>
+              <br><br>
+              <div class="col-sm-12">
+                vv เนื่องจาก vv <br><textarea rows="5" cols-sm="35" maxlength="300"></textarea><br>
+
+              </div>
+
+            </div><br>
+            <div class="row">
+              <div class="col-sm-1">
+
+              </div>
+              <div class="col-sm-11">
+                ข้าพเจ้า <input name="c" type="radio"> นาย <input name="c" type="radio"> นาง <input name="c"
+                  type="radio">
+                นางสาว
+                ชื่อ <input name="v" type="text" size="20" maxlength="30"> นามสกุล <input name="v" type="text" size="20"
+                  maxlength="30"><br>
+
+              </div>
+
+            </div>
+
+
+            <br>ผู้ปกครองของนักศึกษาดังกล่าวข้างต้น ได้รับทราบการขอลาออกแล้ว และยินดีให้ปฏิบัติตามความประสงค์ของนักศึกษา
+            <br>
+            <br>
+
+          </div>
+          <div class="row">
+            <div class="col-sm-2">
+
+            </div>
+            <div class="col-sm-5">
+              จึงเรียนมาเพื่อโปรดพิจารณา
+            </div>
+          </div>
+          <br>
+          <div class="row">
+            <div class="col-sm-5">
+
+            </div>
+            <br>
+            <div class="col-sm-5">
+              ขอแสดงความนับถือ<br> <br>
+              <div class="custom-file mb-3">
+                <input type="file" class="custom-file-input" id="customFile" name="filename">
+                <label class="custom-file-label" for="customFile">เลือกไฟล์</label>
+              </div><br><br> (ผู้ปกครองนักศึกษา)
+            </div><br>
+          </div>
+          <!-- ตกลง/ยกเลิก -->
+          <div class="row">
+            <div class="col-sm-5">
+
+            </div>
+            <div class="col-sm-6">
+              <br><br><button type="submit" class="btn btn-primary">ตกลง</button>
+              <input class="btn btn-danger" name="z,x,v,s,c,b,n,m,," type="reset" value="ล้างข้อมูล">
+            </div>
+          </div>
+        </div>
+  </div>
+  </form>
+  </h5>
   </div>
   <footer class="w3-container w3-padding-64 w3-light-green w3-center w3-opacity w3-xlarge" style="margin-top:128px">
     <div align="center">
@@ -113,6 +545,12 @@
       </div>
     </div>
   </footer>
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.bundle.min.js"
+    integrity="sha384-ho+j7jyWK8fNQe+A12Hb8AhRq26LrZ/JpcUGGOn+Y7RsweNrtN/tE3MoK7ZeZDyx"
+    crossorigin="anonymous"></script>
   <script>
     // Toggle grid padding
     function myFunction() {
@@ -123,6 +561,11 @@
         x.className = x.className.replace("w3-row-padding", "w3-row");
       }
     }
+    // Add the following code if you want the name of the file appear on select
+    $(".custom-file-input").on("change", function () {
+      var fileName = $(this).val().split("\\").pop();
+      $(this).siblings(".custom-file-label").addClass("selected").html(fileName);
+    });
 
     // Open and close sidebar
     function w3_open() {
@@ -133,11 +576,12 @@
     function w3_close() {
       document.getElementById("mySidebar").style.display = "none";
     }
+
+
     var mybutton = document.getElementById("myBtn");
 
     // When the user scrolls down 20px from the top of the document, show the button
     window.onscroll = function () { scrollFunction() };
-
     function scrollFunction() {
       if (document.body.scrollTop > 20 || document.documentElement.scrollTop > 20) {
         mybutton.style.display = "block";
